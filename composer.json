@@ -1,0 +1,22 @@
+{
+    "name": "zenstruck/slugify-bundle",
+    "description": "Provides a slugify service and twig filter for Symfony2.",
+    "keywords": ["slug", "slugify"],
+    "homepage": "http://zenstruck.com/project/ZenstruckSlugifyBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Bond",
+            "email": "kevinbond@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~2.1",
+        "cocur/slugify": "~0.2"
+    },
+    "autoload": {
+        "psr-0": { "Zenstruck\\SlugifyBundle": "" }
+    },
+    "target-dir": "Zenstruck/SlugifyBundle"
+}
