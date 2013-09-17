@@ -39,11 +39,15 @@ $slugify = $this->container->get('zenstruck.slugify');
 
 {# custom space separator #}
 {{ 'Hello World!'|slugify('_') }} {# hello_world #}
+
+{# custom space separator and custom replacement for emptyValue #}
+{{ '####'|slugify('_', 'non') }} {# non #}
 ```
 
 ## Full Default Configuration
 
 ```yaml
 zenstruck_slugify:
-    twig: true
+    twig: true #enable twig filter
+    mode: array #iconv or array mode
 ```

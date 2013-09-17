@@ -19,7 +19,15 @@ class ZenstruckSlugifyExtension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-
+        
+        $mode = null;
+        if(isset($config['mode'])){
+             $mode = $config['mode'];
+        }
+        $container->setParameter(
+                'zenstruck.slugify.mode', $mode
+            );
+        
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('slugify.xml');
 

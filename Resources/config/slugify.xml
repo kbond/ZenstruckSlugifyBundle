@@ -4,6 +4,8 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="zenstruck.slugify" class="Cocur\Slugify\Slugify" />
+        <service id="zenstruck.slugify" class="Cocur\Slugify\Slugify">
+            <argument>%zenstruck.slugify.mode%</argument>
+        </service>    
     </services>
 </container>
