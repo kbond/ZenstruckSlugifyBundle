@@ -23,9 +23,9 @@ class SlugifyExtension extends \Twig_Extension
         );
     }
 
-    public function slugify($text, $separator = '-')
+    public function slugify($text, $separator = '-', $emptyValue = null)
     {
-        return $this->slugify->slugify($text, $separator);
+        return $this->slugify->slugify($text, $separator, $emptyValue);
     }
 
     public function getName()

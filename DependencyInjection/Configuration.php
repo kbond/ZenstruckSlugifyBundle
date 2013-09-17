@@ -21,6 +21,11 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->booleanNode('twig')->defaultTrue()->end()
+                ->scalarNode('mode')
+                    ->validate()
+                        ->ifNotInArray(array('array', 'iconv'))
+                        ->thenInvalid('Invalid Slugify mode')
+                ->end()
             ->end()
         ;
 
