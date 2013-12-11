@@ -6,6 +6,6 @@
     <services>
         <service id="zenstruck.slugify" class="Cocur\Slugify\Slugify">
             <argument>%zenstruck.slugify.mode%</argument>
-        </service>    
+        </service>
     </services>
 </container>
