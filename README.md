@@ -1,5 +1,8 @@
 # ZenstruckSlugifyBundle
 
+**DEPRECIATED** in favor of [cocur/slugify](https://github.com/cocur/slugify) which now includes a
+[Symfony2 Bundle](https://github.com/cocur/slugify#symfony2)
+
 This bundle provides integration of the [Slugify](https://github.com/cocur/slugify) library into Symfony2.
 A slugify service and twig filter is provided.
 
